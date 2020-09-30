@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Notes Buddy API</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+
+    <!-- CSS Reset -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+
+    <!-- Milligram CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+</head>
+<body style="padding:20px;">
+    <div style="text-align:center;">
+    <h1>Welcome To API Guide</h1>
+
+    <em>Notes: Variables are denoted as</em><u> ${x}</u><br>
+    <em>All routes are after <b>notes.awebisam.com/</b>
+    <br> Example:<b>notes.awebisam.com/api/v1</b>
+     </em>
+
+    </div>
+    <ul>
+        <h2>Authentication- Register</h2>
+        <strong>To register user, send POST request to <a href="/api/v1/account/register"></strong>/api/v1/account/register</a><strong> with </strong>'username, email, first_name, last_name and password'.</strong>
+        </li>
+
+
+        <li>
+        <h2>Authentication- Login</h2>
+        <strong>To login user, send POST request to <a href="/api/v1/account/login"></strong>/api/v1/account/login</a><strong> with </strong>'username and password'.</strong><strong> Then, it will return user's Token that should be passed as header while fetching, updating and/or deleting as in next two steps.</strong>
+        </li>
+
+        <li>
+        <h2>Fetching</h2>
+        <strong>To fetch notes, send GET request to <a href="/api/v1/"></strong>/api/v1</a><strong> including </strong>'Authorization' <strong>header with value: </strong>'Token ${userToken}'. <br> <strong>To fetch specific note, send GET request to <a href="/api/v1/${noteId}"></strong>/api/v1/${noteId}</a><strong> including </strong>'Authorization' <strong>header with value: </strong>'Token ${userToken}'.
+        </li>
+
+        <li>
+        <h2>Posting/Deleting</h2>
+        <strong>To POST/DELETE notes, send POST/DELETE request to <a href="/api/v1/${noteId}"></strong>/api/v1/${noteId}</a><strong> including </strong>'Authorization' <strong>header with value: </strong>'Token ${userToken}'.
+        </li>
+
+        <li>
+        
+
+
+    </ul>
+    <hr>
+    {% comment %} <h3 style="text-align:center;">To request access, mail me at <a href="mailto:hello@awebisam.com">hello@awebisam.com</a></h3> {% endcomment %}
+
+</body>
+</html>
