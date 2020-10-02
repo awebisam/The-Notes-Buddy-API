@@ -3,7 +3,7 @@ The api has been deployed at https://notes.awebisam.com/api/v1
 Auth type: Basic Token Authentication
 
 
-# steps to contribute in this project as follows 
+# Steps to contribute in this project as follows 
 1. Fork the repo
 2. Clone the repo eg:- git clone url
 3. Create new branch  eg:- git branch branchname
