@@ -22,10 +22,7 @@ Auth type: Basic Token Authentication
 7. Runserver (python manage.py runserver) [Open your browser and visit 127.0.0.1:8000]
 
 
-### Before contribution ,please read readme.md file carefully.
-
-
-### Don't forget to setup your DB before running.
+### Before contribution, please read readme.md file carefully.
 
 Thank you for contributing in this project. Your work means a lot to us!!
 
