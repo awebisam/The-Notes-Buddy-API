@@ -3,7 +3,7 @@ The API has been deployed at https://notes.awebisam.com/api/v1
 Auth type: Basic Token Authentication
 
 
-# Steps to contribute in this project as follows (Thank you anushkarthik05 and rcoder23)
+### Steps to contribute in this project as follows (Thank you anushkarthik05 and rcoder23)
 1. Fork the repository.
 2. Clone the repository. (git clone url)
 3. Create new branch. (git branch branchname)
@@ -22,8 +22,6 @@ Auth type: Basic Token Authentication
 7. Runserver (python manage.py runserver) [Open your browser and visit 127.0.0.1:8000]
 
 
-# Before contribution, please read readme.md file carefully.
-=======
 ### Before contribution ,please read readme.md file carefully.
 
 
