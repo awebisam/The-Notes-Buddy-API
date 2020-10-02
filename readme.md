@@ -3,21 +3,14 @@ The API has been deployed at https://notes.awebisam.com/api/v1
 Auth type: Basic Token Authentication
 
 
-# Steps to contribute in this project as follows 
+# Steps to contribute in this project as follows (Thank you anushkarthik05 and rcoder23)
 1. Fork the repository.
 2. Clone the repository. (git clone url)
 3. Create new branch. (git branch branchname)
 4. Move to new branch. (git checkout branchname)
 5. Change or update code.
 6. Push the code. (git push origin branchname) 
-=======
-### To contribute in the project(added by rcoder23):
-1. Fork the repo
-2. Clone the repo eg:- git clone url
-3. Create new branch  eg:- git branch branchname
-4. Move to new branch eg;- git checkout branchname
-5. Change or update in code ,what you want 
-6. Push the code eg;- git push origin branchname 
+
 
 ### To run this project on your PC:
 1. Make sure that you have python installed. If not, install from https://python.org
