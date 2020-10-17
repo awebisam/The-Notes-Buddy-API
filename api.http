@@ -1,0 +1,62 @@
+
+### Http clent is a extension used in vscode to send rest calls
+### This file can be used as a docs
+### or as a testing platfrom if you install the docs
+### Download link below
+### https://marketplace.visualstudio.com/items?itemName=humao.rest-client
+
+
+### Create a user
+POST http://localhost:8000/api/v1/account/register
+Content-Type: application/json
+
+{
+    "username":"testuser",
+    "email":"test54312@gmail.com",
+    "first_name":"testname1",
+    "last_name":"testname2",
+    "password":"test12345"
+}
+
+### Lets login a user
+### You will recive a rest token here 
+### make sure you will save it 
+POST http://localhost:8000/api/v1/account/login
+Content-Type: application/json
+
+{
+    "username":"testuser",
+    "password":"test12345"
+}
+
+### Lets create a NOTE
+POST http://localhost:8000/api/v1/
+Content-Type: application/json
+Authorization: token 9e4833851912c39b50574c30580b633435b751e2
+
+{
+    "name":"Physics ko note",
+    "note":"This is a physics of physics subject"
+}
+
+### Lets retrieve that note
+GET  http://localhost:8000/api/v1/1/
+Authorization: token 9e4833851912c39b50574c30580b633435b751e2
+
+### Lets Edit/Update that note
+PATCH  http://localhost:8000/api/v1/1/
+Content-Type: application/json
+Authorization: token 9e4833851912c39b50574c30580b633435b751e2
+
+{
+    "name":"Physics ko note",
+    "note":"This is a physics of physics subject of topic sound and waves"
+}
+
+### Lets GET all the notes
+GET http://localhost:8000/api/v1/
+Authorization: token 9e4833851912c39b50574c30580b633435b751e2
+
+### Lets delete that note
+DELETE http://localhost:8000/api/v1/1/
+Authorization: token 9e4833851912c39b50574c30580b633435b751e2

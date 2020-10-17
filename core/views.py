@@ -14,8 +14,10 @@ def index(request):
 
 class NoteViewSet(viewsets.ModelViewSet):
     queryset = Note.objects.all()
-    permission_classes = (permissions.IsAuthenticated,)
+    permission_classes = [permissions.IsAuthenticated]
     serializer_class = NoteSerializer
+
+
 
     def get_queryset(self):
         # filtered by its owner and return the queryset
