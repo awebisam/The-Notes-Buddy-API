@@ -10,6 +10,6 @@ router.register('', views.NoteViewSet)
 
 urlpatterns = [
     path("", include(router.urls)),
-    path('account/register', views.UserCreate.as_view()),
+    path('account/register', views.UserCreate.as_view({"post":"create"})),
     path('account/login', obtain_auth_token, name='obtain-token')
 ]
