@@ -4,7 +4,6 @@ from .models import Note
 from .serializers import NoteSerializer, UserSerializer
 from rest_framework import viewsets
 from rest_framework import permissions
-from rest_framework import generics
 from django.contrib.auth.models import User
 from rest_framework.authtoken.models import Token
 
@@ -32,6 +31,6 @@ class UserCreate(viewsets.ModelViewSet):
     def create(self,request):
         resp = super().create(request)
         user = User.objects.get(username = resp.data['username'])
-        token,created = Token.objects.get_or_create(user=user)
+        token, created = Token.objects.get_or_create(user=user)
         resp.data['token'] = token.key
         return resp
