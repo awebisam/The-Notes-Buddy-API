@@ -1,5 +1,4 @@
 from django.shortcuts import render
-from rest_framework.response import Response
 from .models import Note
 from .serializers import NoteSerializer, UserSerializer
 from rest_framework import viewsets
