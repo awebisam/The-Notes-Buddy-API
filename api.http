@@ -12,7 +12,7 @@ POST http://localhost:8000/api/v1/account/register
 Content-Type: application/json
 
 {
-    "username":"testuser",
+    "username":"testuserTest",
     "email":"test54312@gmail.com",
     "first_name":"testname1",
     "last_name":"testname2",
